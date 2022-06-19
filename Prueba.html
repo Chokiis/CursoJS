@@ -30,6 +30,7 @@
         var miNombre = "Estephanía";
         //console.log(miNombre);
 
+
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Operador de asignación
@@ -44,6 +45,7 @@
         // console.log(a);
 
         // = es el operador de asignación en JavaScript.
+
 
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
@@ -64,6 +66,7 @@
         // console.log(a);
         // console.log(b);
 
+
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Iniciarlizar variables.
@@ -82,6 +85,7 @@
         // a = 56;
         // console.log(a);
 
+
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Mayúsculas y minúsculas - Case-sensitive.
@@ -90,6 +94,7 @@
         // console.log(MIVARIABLE); // Error
         // console.log(Mivariable); // Error
         //console.log(miVariable); // Se tiene que escribir correctamente.
+
 
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
@@ -114,6 +119,7 @@
         // suma = a + b;
         // console.log(suma);
 
+
         ////////////////////////////////////////////////
         // Multiplicación.
 
@@ -125,6 +131,7 @@
 
         // producto = -5 * 6;
         // console.log(producto); // Negativo.
+
 
         ////////////////////////////////////////////////
         // División.
@@ -138,12 +145,14 @@
         // cociente = 3 / 0;
         // console.log(cociente); // Infinito.
 
+
         ////////////////////////////////////////////////
         // Números decimales.
 
         // var miNumeroDecimal = 23.4;
 
         // var peso = 78.34;
+
 
         ////////////////////////////////////////////////
         // Multiplicar números decimales.
@@ -163,6 +172,7 @@
         // producto = -5.7 * 3.4; // Negativos.
         // console.log(producto);
 
+
         ////////////////////////////////////////////////
         // Dividir números decimales.
 
@@ -175,8 +185,221 @@
         // cociente = 4.2 / 0.0; // Infinito.
         // console.log(cociente);
 
+
         ////////////////////////////////////////////////
         // Resto de una división.
+
+        //El símbolo de % es el operador que permite obtener el resto de una división.
+
+        // var resto = 15 % 5;
+        // console.log(resto);
+
+        // resto = 5 % 2;
+        // console.log(resto);
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Incrementar el valor de una variable.
+
+        // var librosComprados = 105;
+        // console.log(librosComprados); // Inicialmente.
+
+        // Opción 1.
+
+        // librosComprados = librosComprados + 1;
+        // console.log(librosComprados);
+
+        // Opción 2;
+        // librosComprados++;
+        // console.log(librosComprados);
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Reducir el valor de una variable.
+
+        // var numerosDeEstudiantes = 256;
+        // console.log(numerosDeEstudiantes); // Inicialmente.
+
+        // Opción 1.
+
+        // numerosDeEstudiantes = numerosDeEstudiantes - 1;
+        // console.log(numerosDeEstudiantes);
+
+        // Opción 2;
+        // numerosDeEstudiantes--;
+        // console.log(numerosDeEstudiantes);
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Asignación de suma - Asignación compuesta.
+
+        // Primera forma de sumar.
+        // var a = 23;
+        // a = a + 5;
+        // console.log(a);
+
+        //Segunda forma de sumar (la más común).
+        // a += 5;
+        // console.log(a);
+
+        // EJEMPLO:
+
+        // var totalVentas = 13567.34;
+        // console.log(totalVentas);
+
+        // totalVentas += 345;
+        // console.log(totalVentas);
+
+
+        ////////////////////////////////////////////////
+        // Asignación de resta.
+
+        // Primera forma.
+        // var b = 23;
+        // b = b - 3;
+        // console.log(b);
+
+        // Segunda forma.
+        // b -= 3;
+        // console.log(b);
+
+        // EJEMPLO:
+
+        // var totalDeuda = 2446;
+        // console.log(totalDeuda);
+
+        // totalDeuda -= 345;
+        // console.log(totalDeuda);
+
+
+        ////////////////////////////////////////////////
+        // Asignación de multiplicación.
+
+        // Primera forma.
+        // var c = 23;
+        // c = c * 2;
+        // console.log(c);
+
+        // Segunda forma.
+        // c *= 2;
+        // console.log(c);
+
+        // EJEMPLO.
+
+        // var salario = 45000;
+        // console.log(salario);
+
+        // salario *= 5;
+        // console.log(salario);
+
+
+        ////////////////////////////////////////////////
+        // Asignación de división.
+
+        // Primera forma.
+        // var d = 39;
+        // d = d / 3;
+        // console.log(d);
+
+        // Segunda forma.
+        // d /= 3;
+        // console.log(d);
+
+        // EJEMPLO.
+
+        // var salario = 45000;
+        // salario /= 2;
+        // console.log(salario);
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Variables con Cadenas de caracteres.
+
+        // Las comillas simples o dobles equivalen a lo mismo, 
+        // a interpretar una cadena de caracteres entre dichas comillas.
+
+        // var nombre = "Alan";
+        // var apellido = 'Turing';
+
+
+        ////////////////////////////////////////////////
+        // Escapar comillas en Cadenas de caracteres.
+
+        // var miCadena = "Soy un cadena de caracteres "con comillas""; // Error.
+
+        // Para omitir las comillas y se tomen como string, se agrega una diagonal "/"
+        // antes de cada una de las comillas que se considere parte de la cadena, se presenta un ejemplo.
+        // var miCadena = "Soy un cadena de caracteres \"con comillas\". ";
+        // console.log(miCadena);
+
+
+        ////////////////////////////////////////////////
+        // Cadenas de caracteres con comillas simples.
+
+        /* Para omitir las comillas dobles en caso de considerarlas en una cadena,
+        se cambia las comillas exteriores por comillas simples y se coloca
+        comillas dobles por dentro para interpretarlas junto con la cadena de caracteres.
+        Se presenta un ejemplo. */
+        // var miMeta;
+        // miMeta = "Aprender a programar con \"freeCodeCamp\"."; // Texto con comillas en cadena método 1.
+        // console.log(miMeta);
+
+        // miMeta = 'Aprender a programar con "freeCodeCamp".'; // Sintaxis simple y con el mismo resultado.
+        // console.log(miMeta);
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Secuencias de escape.
+
+        /* Código |  Resultado
+        ------------------------
+        \'          Comilla simple.
+        \"          Comilla doble.
+        \\          Barra invertida.
+        \n          Línea nueva o salto de línea.
+        \r          Retorno de carro.
+        \t          Tabulación.
+        \b          Retroceso.
+        \f          Salto de página.
+        ...
+
+        Ejemplos:
+        */
+        
+        //Ejemplo 1.
+        // console.log("Estoy aprendiendo \"JavaScript\".");
+
+        //Ejemplo 2 - Muestra la barra invertida.
+        // vconsole.log("Estoy aprendiendo \\JavaScript\\.");
+
+        //Ejemplo 3 - Línea nueva o salto de línea.
+        // console.log("Estoy aprendiendo \nJavaScript");
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Concatenar cadenas de caracteres.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
