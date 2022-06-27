@@ -796,19 +796,202 @@
         ////////////////////////////////////////////////
         // Funciones.
 
-        function mostrarMensaje() {
+        // function mostrarMensaje() {
+            // Aquí van las acciones que quieren que se ejecuten en la función.
+        //     console.log("¡Hola mundo!");
+        // }
 
-        }
-
-
-
-
-
-
-
+        // Llamar la función para que se ejecute cuantas veces sea.
+        // mostrarMensaje();
+        // mostrarMensaje();
 
 
 
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Argumentos.
+
+        // Se definen los parámetros que se van a recibir 
+        // dentro de los paréntesis cuando se aplique la función
+
+        // function sumar(a, b) {
+             // Cuerpo de la función.
+        //     suma = a + b;
+        //     console.log("El resltado de " + a + " + " + b + " es: " + suma);
+        // }
+
+        // Los valores se asignan a cada uno de los parámetros definidos con anterioridad.
+        // sumar(5, 3);
+        // sumar(8, 9);
+        // sumar(2, 4);
+        // sumar(5, 5);
+
+        // Se pueden poner otras variables definidas dentro de la función definida.
+        // Para ello se declaran las variables con su valor y se ponen en los paréntesis de la función.
+
+        // var x = 5;
+        // var y = 3;
+
+        // sumar(x, y);
+
+
+        // Otro ejemplo ---------------------------------------------
+
+        // function concatenarTresCadenas(cadena1, cadena2, cadena3) {
+        //     console.log(cadena1 + " " + cadena2 + " " + cadena3);
+        // }
+
+        // concatenarTresCadenas( "Estoy", "aprendiendo", "a programar.");
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Ámbito global.
+
+        // Una variable global se puede acceder desde cualquier estructura
+        // del programa, eso por su definición fuera de cualquier función o método.
+        // Por lo tanto, se puede acceder, modificar y eliminar globalmente.
+
+        // var miVariableGlobal = 5;
+
+        // console.log(miVariableGlobal);
+
+        // function miFuncion() { 
+        //     console.log(miVariableGlobal);
+        // }
+
+        // miFuncion();
+
+        // console.log(miVariableGlobal);
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Ámbito local.
+
+        // Al contrario de una variable global, son locales para una función
+        // y son variables que definimos dentro de una función y que 
+        // solamente se pueden utilizar solo dentro de esa función.
+
+        // function miFuncion() { 
+        //     var miVariableLocal = 4;
+        //     console.log(miVariableLocal);
+        // }
+        // miFuncion();
+
+        // Ahora se consulta la variable local fuera de la función, arrojando error.
+        // console.log(miVariableLocal); // Error, ya que solamente fue definida dentro de la función que fueron definidas y creadas.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Ámbito global vs ámbito local.
+
+        // Aunque se crean dos variables con el mismo nombre, tendrán diferentes valores.
+
+        /* Esto se debe porque la variable global (de valor "Cristofer") está
+        está definida de manera global, por encima de todas las funciones. */
+
+        /* Mientras tanto, la variable local (de valor "Jair") está siendo definida
+        dentro de una función, pero que solamente puede ser llamada dentro de la función
+        porque de ahí en fuera, no es conocida globalmente. */
+
+        // var miNombre = "Cristofer";
+
+        // function mostrarMiNombre() {
+        //     var miNombre = "Jair";
+        //     console.log(miNombre);
+        // }
+
+        // mostrarMiNombre();
+
+        // console.log(miNombre);
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Retornar un valor.
+
+        // Con "return" regresa el valor de algo.
+        // function sumar(a, b) {
+        //     return a + b;
+        // }
+
+        // Aquí se retorna el valor resultante, más no se muestra.
+        // sumar(5, 3);
+
+        // Aquí se retorna el valor resultante y se muestra en la consola.
+        // console.log(sumar(5, 3));
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Undefined.
+
+        /* Aquí se hace una suma pero sin retornar un valor, 
+        se muestra en consola pero en la función no retorna nada. */
+        // function sumar(a, b) {
+        //     console.log(a + b);
+        // }
+
+        /* Aquí se llama a la función pero como no retorna nada dicha función,
+        va a marcar error porque no hay valor retornable, por lo tanto JavaScript
+        lo expresa como "undefined".*/
+        // console.log(sumar(5, 3)); // Undefined.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Asignar un valor retornado.
+
+        // function sumar(a, b) {
+        //     return a + b;
+        // }
+
+        // Se crea una variable para guardar el valor retornado de una función.
+        // var resultado = sumar(5, 3);
+
+        // Ahora se consulta la variable con el valor retornado de la función.
+        // console.log(resultado);
+
+
+        // Otro ejemplo ---------------------------------------------
+
+        // function crearCadenaConMeta(lenguajeDeProgramacion) {
+        //     return "Mi meta es aprender " + lenguajeDeProgramacion;
+        // }
+
+        // var miMeta = crearCadenaConMeta("JavaScript");
+        // Ejemplo lógico: var miMeta = "Mi meta es aprender JavaScript".
+
+        // console.log(miMeta);
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Permanece en fila - Ejercicio #1.
+
+        // Vídeo min: https://youtu.be/ivdTnPl1ND0?t=10112 (2:48:32).
+
+        /*Próximo en la fila.
+        
+        En informática una cola (queue) es una estructura de datos abstracta
+        en la cual los elementos se mantienen en orden. Los nuevos elementos 
+        se pueden añadir al final de la cola y los elementos previos se retiran 
+        del principio de la cola.
+
+        Defina una función proximoEnLaFila que tome un arreglo (arreglo) y 
+        un número (elemento) como argumentos. Agrega el número al final del 
+        arreglo y luego elimina el primer elemento del arreglo. La función 
+        próximoEnLaFila debe retornar el elemento que fue removido.
+        */
 
 
 
