@@ -993,7 +993,277 @@
         próximoEnLaFila debe retornar el elemento que fue removido.
         */
 
-        // Minuto del vídeo: https://youtu.be/ivdTnPl1ND0?t=10212.
+        // function proximoEnLaFila(arreglo, elemento) {
+        //     arreglo.push(elemento); // Se inserta un elemento al arreglo.
+        //     return arreglo.shift(); // Se retorna el primer elemento del arreglo y se extrae con "shift".
+        // }
+
+        // var miArreglo = [1, 2, 3, 4, 5];
+
+        // console.log("Antes: " + JSON.stringify(miArreglo)); // Muestra el arreglo antes del cambio.
+
+        // console.log(proximoEnLaFila(miArreglo, 6)); // Se ingresa un elemento "6" y se muestra el número extraido.
+
+        // console.log("Después: " + JSON.stringify(miArreglo)); // Muestra el arreglo después del cambio.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Valores booleanos.
+
+        // true = verdadero.
+        // false = falso.
+
+        // console.log(true);
+        // console.log(false);
+
+        // Se tiene que respetar las minúsculas de estas, sino marca error.
+        // console.log(true); // Correcto, muestra el valor booleano.
+        // console.log(True); // Error, no toma el valor booleano.
+        // console.log(tRue); // Error, no toma el valor booleano.
+    
+        
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador de igualdad.
+
+        // console.log(5 == 5); // true
+        // console.log(6 == 5); // false
+
+        // console.log("Hola" == "Hola"); // true
+        // console.log("Hola" == "JavaScript"); // false
+        // console.log("Hola" == "hola"); // false, por mayúscula o minúsculas diferentes.
+
+        // console.log([1, 2, 3] == [1, 2, 3]); // false, ya que no compara los elementos del arreglo.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador de igualdad estricta.
+
+        // console.log(9 == 9);// true
+        // console.log(9 == "9"); // true, ya que aunque sean diferentes tipos de atributo, estos van a ser true.
+        // esto pasa ya que primero pasan a ser un tipo de dato común por contener el mismo valor.
+
+        // Aquí entra el operador de igual estricta.
+        // console.log(9 === 9); // true, compara los valores de cada uno.
+        // console.log(9 === "9"); // false, no se van a convertir en un tipo de dato en común, se van a comparar en base su valor y tipo de dato.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Práctica para comparar valores.
+
+        var a;
+        var b;
+
+        a = 5;
+        b = 5;
+
+        // console.log(a == b); // true
+        // console.log(a === b); // true
+
+        b = 8;
+
+        // console.log(a == b); // false
+        // console.log(a === b); // false
+
+        b = "5";
+
+        // console.log(a == b); // true
+        // console.log(a === b); // false
+
+        // a = "JavaScript";
+        // b = "JavaScript";
+
+        // console.log(a == b); // true
+        // console.log(a === b); // true
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador de desigualdad.
+
+        // Operador "distinto" ("not equal to" en inglés).
+        // console.log(9 != 6); // true, ya que son números distintos.
+
+        // console.log(9 != 9); // false, ya que no son números distintos.
+
+        // console.log("JavaScript" != "JavaScript"); // false
+
+        // console.log([1, 2, 3] != [1, 2, 3]); // true, son objetos independientes, por lo tanto son distintos.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador de desigualdad estricta.
+
+        // console.log(1 != "1"); // false, el operador convierte ambos operandos en un tipo de dato común antes de hacer la comparación.
+
+        // Operador de desigualdad estricta
+        // console.log(1 !== "1"); // true, ya que no convierte a ambos operandos en un tipo de dato común.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador "Mayor que".
+
+        // console.log(6 > 5); // true
+        // console.log(10 < 3); // false
+
+        // console.log("A" < "B"); // true, compara mediante el abecedario.
+        // console.log("ABC" < "ACB"); // true, compara los caracteres si A está antes que C.
+        
+        // console.log("AB" > "A"); // true
+
+        // console.log("Mundo" > "Hola"); // true, ya que Mundo viene después de Hola en el diccionario.
+
+        // console.log("M" > "H");
+
+        // También con variables sirve.
+        // var a = 15;
+        // var b = 7;
+
+        // console.log(a < b); // false
+        // console.log(b < a); // true
+
+        // console.log(b < a); // true
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador "Mayor igual que".
+
+        // console.log(5 > 5); // false, ya que 5 estrictamente es mayor que 5.
+
+        // console.log(5 >= 5); // true, ya que toma si los valores también son iguales.  
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador "Menor que".
+
+        // console.log(5 < 6); // true
+        // console.log(10 < 3); // false
+
+        // console.log("A" < "B"); // true, ya que "A" se encuentra antes que B en el orden alfabético.
+        // console.log("ABC" < "ACB"); // true, ya que "B se encuentra antes que "C".
+
+        // var a = 15;
+        // var b = 7;
+
+        // console.log(a < b); // false
+        // console.log(b < a); // true
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador "Menor igual que".
+
+        // console.log(5 < 5); // false, porque 5 no es estrictamente menor que cinco, sino que son iguales.
+
+        // console.log(5 <= 5); // true, ya que 5 también es igual que 5.
+
+
+
+        ////////////////////////////////////////////////
+        ////////////////////////////////////////////////
+        // Operador lógico "and".
+
+        /*
+            Tabla de verdad del operador AND.
+            Para: X && Y.
+            |  X  |  Y  |  X && Y  |
+            |  T  |  T  |     T    |
+            |  T  |  F  |     F    |
+            |  F  |  T  |     F    |
+            |  F  |  F  |     F    |
+            
+            La expresión solo es verdadera cuando ambos operandos
+            son verdaderos.
+        */
+
+        // Diferentes combinaciones de la tabla de verdad.
+        // console.log(true && true);
+        // console.log(true && false);
+        // console.log(false && true);
+        // console.log(false && false);
+
+        // Ejemplo con condiciones.
+
+        // PRIMER CASO.
+        var a = 8;
+        // (a > 5) && (a < 10) --> true  && true
+        // (a > 5)  --> true
+        // (a < 10) --> true
+        // Se cumplen las dos condiciones = true.
+        console.log((a > 5) && (a < 10));
+
+
+        // SEGUNDO CASO.
+        var a = 3;
+        // (a > 5) && (a < 10) --> false  && true
+        // (a > 5)  --> false
+        // (a < 10) --> true
+        // No se cumplen las dos condiciones = false.
+        console.log((a > 5) && (a < 10));
+
+
+        // TERCER CASO.
+        var a = 15;
+        // (a > 5) && (a < 10) --> true  && false
+        // (a > 5)  --> true
+        // (a < 10) --> false
+        // No se cumplen las dos condiciones = false.
+        console.log((a > 5) && (a < 10));
+
+
+        // CUARTO CASO.
+        var a = 15;
+        // (a > 5) && (a == 3) --> true  && false
+        // (a > 5)  --> true
+        // (a < 10) --> false
+        // No se cumplen las dos condiciones = false.
+        console.log((a > 5) && (a == 3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
