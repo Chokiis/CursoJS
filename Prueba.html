@@ -35,7 +35,7 @@
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Operador de asignación
-        
+
         // var a;
         // var b = 2;
 
@@ -167,7 +167,7 @@
 
         // producto = 2.4 * 4; // Decimal con entero.
         // console.log(producto);
-        
+
         // producto = 6 * 8.9; // Entero con decimal.
         // console.log(producto);
 
@@ -328,7 +328,7 @@
         ////////////////////////////////////////////////
         // Variables con Cadenas de caracteres.
 
-        // Las comillas simples o dobles equivalen a lo mismo, 
+        // Las comillas simples o dobles equivalen a lo mismo,
         // a interpretar una cadena de caracteres entre dichas comillas.
 
         // var nombre = "Alan";
@@ -380,7 +380,7 @@
 
         Ejemplos:
         */
-        
+
         // Ejemplo 1.
         // console.log("Estoy aprendiendo \"JavaScript\".");
 
@@ -439,7 +439,7 @@
         ////////////////////////////////////////////////
         // Longitud de una cadena de caracteres.
 
-        // La función de "length" cuenta la cantidad de objetos, 
+        // La función de "length" cuenta la cantidad de objetos,
         // esto incluye la cantidad de caracteres que haya en un texto.
         // var miCadena;
 
@@ -469,7 +469,7 @@
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Inmutabilidad de cadenas de caracteres.
-        
+
         // Mutable: que se puede cambiar.
         // Inmutable: que no se puede cambiar.
 
@@ -489,7 +489,7 @@
         // Notación de corchetes: enésimo carácter.
 
         // var miCadena = "JavaScript";
-        
+
         // Cadena:     J a v a S c r i p t
         // Índices:    0 1 2 3 4 5 6 7 8 9
 
@@ -516,7 +516,7 @@
 
         /*
         El último índice iempre es lonitud - 1 porue comenzamos a contar desde 0
-        
+
         micadena.lenght para "JavaScrip" es 10.
         El último índice es 9.
 
@@ -529,7 +529,7 @@
         // console.log(miCadena[miCadena.length - 1]); // Longitud de la cadena -1.
 
 
-        
+
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
         // Notación de corchetes: de derecha a izquierda.
@@ -538,7 +538,7 @@
 
         /*
         El penúltimo índice es longitud - 2 porque comezamos a contar desde 0.
-        
+
         Cadena:     J a v a S c r i p t
         Índices:    0 1 2 3 4 5 6 7 8 9
 
@@ -566,7 +566,7 @@
 
         /* Concatena las cadenas para crear una cadena que muestre un mensaje.
         Puedes cambiar los valores de las variables.
-        
+
         Por ejemplo: El perro negro corrió rapidamente a la tienda.
                     La bicicleta pequeña voló a la tienda lentamente.
         */
@@ -683,25 +683,25 @@
         // Accedr a arreglos multidimensionales.
 
         // var  miArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-        
+
         /*
         Arreglo:    	    [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
         Índices                  0          1          2
         Índices internos:     0  1  2    0  1  2    0  1  2
         */
-        
+
         // console.log(miArreglo[0]); // [1, 2, 3]
         // console.log(miArreglo[1]); // [4, 5, 6]
         // console.log(miArreglo[2]); // [7, 8, 9]
 
         //Consular directamente en uno de los elementos de los arreglos anidados.
-        // Solamente se agrrega la primera posición del primer arreglo, 
+        // Solamente se agrrega la primera posición del primer arreglo,
         // luego se agrega la segunda posición del arreglo anidado para obtener su valor preciso.
 
         // console.log(miArreglo[1][0]); // [ ->4, 5, 6] -> Obtiene e imprime el elemento 4.
         // console.log(miArreglo[1][1]); // [4, ->5, 6] -> Obtiene e imprime el elemento 5.
         // console.log(miArreglo[1][2]); // [4, 5, ->6] -> Obtiene e imprime el elemento 6.
-        
+
 
 
         ////////////////////////////////////////////////
@@ -811,7 +811,7 @@
         ////////////////////////////////////////////////
         // Argumentos.
 
-        // Se definen los parámetros que se van a recibir 
+        // Se definen los parámetros que se van a recibir
         // dentro de los paréntesis cuando se aplique la función
 
         // function sumar(a, b) {
@@ -857,7 +857,7 @@
 
         // console.log(miVariableGlobal);
 
-        // function miFuncion() { 
+        // function miFuncion() {
         //     console.log(miVariableGlobal);
         // }
 
@@ -872,10 +872,10 @@
         // Ámbito local.
 
         // Al contrario de una variable global, son locales para una función
-        // y son variables que definimos dentro de una función y que 
+        // y son variables que definimos dentro de una función y que
         // solamente se pueden utilizar solo dentro de esa función.
 
-        // function miFuncion() { 
+        // function miFuncion() {
         //     var miVariableLocal = 4;
         //     console.log(miVariableLocal);
         // }
@@ -933,7 +933,7 @@
         ////////////////////////////////////////////////
         // Undefined.
 
-        /* Aquí se hace una suma pero sin retornar un valor, 
+        /* Aquí se hace una suma pero sin retornar un valor,
         se muestra en consola pero en la función no retorna nada. */
         // function sumar(a, b) {
         //     console.log(a + b);
@@ -981,15 +981,15 @@
         // Vídeo min: https://youtu.be/ivdTnPl1ND0?t=10112 (2:48:32).
 
         /*Próximo en la fila.
-        
+
         En informática una cola (queue) es una estructura de datos abstracta
-        en la cual los elementos se mantienen en orden. Los nuevos elementos 
-        se pueden añadir al final de la cola y los elementos previos se retiran 
+        en la cual los elementos se mantienen en orden. Los nuevos elementos
+        se pueden añadir al final de la cola y los elementos previos se retiran
         del principio de la cola.
 
-        Defina una función proximoEnLaFila que tome un arreglo (arreglo) y 
-        un número (elemento) como argumentos. Agrega el número al final del 
-        arreglo y luego elimina el primer elemento del arreglo. La función 
+        Defina una función proximoEnLaFila que tome un arreglo (arreglo) y
+        un número (elemento) como argumentos. Agrega el número al final del
+        arreglo y luego elimina el primer elemento del arreglo. La función
         próximoEnLaFila debe retornar el elemento que fue removido.
         */
 
@@ -1022,8 +1022,8 @@
         // console.log(true); // Correcto, muestra el valor booleano.
         // console.log(True); // Error, no toma el valor booleano.
         // console.log(tRue); // Error, no toma el valor booleano.
-    
-        
+
+
 
         ////////////////////////////////////////////////
         ////////////////////////////////////////////////
@@ -1120,7 +1120,7 @@
 
         // console.log("A" < "B"); // true, compara mediante el abecedario.
         // console.log("ABC" < "ACB"); // true, compara los caracteres si A está antes que C.
-        
+
         // console.log("AB" > "A"); // true
 
         // console.log("Mundo" > "Hola"); // true, ya que Mundo viene después de Hola en el diccionario.
@@ -1144,7 +1144,7 @@
 
         // console.log(5 > 5); // false, ya que 5 estrictamente es mayor que 5.
 
-        // console.log(5 >= 5); // true, ya que toma si los valores también son iguales.  
+        // console.log(5 >= 5); // true, ya que toma si los valores también son iguales.
 
 
 
@@ -1188,7 +1188,7 @@
             |  T  |  F  |     F    |
             |  F  |  T  |     F    |
             |  F  |  F  |     F    |
-            
+
             La expresión solo es verdadera cuando ambos operandos
             son verdaderos.
         */
@@ -1250,7 +1250,7 @@
             |  T  |  F  |     T    |
             |  F  |  T  |     T    |
             |  F  |  F  |     F    |
-            
+
             La expresión es verdadera si alguno de los dos operandos
             o ambos son verdaderos.
         */
@@ -1262,7 +1262,7 @@
         // console.log(false || false);
 
         // Ejemplo con condiciones.
-        
+
         // PRIMER CASO.
         // var a = 8;
         // (a < 5) || (a > 15) --> false || false --> false
@@ -1356,7 +1356,7 @@
         // Ejemplo:
 
         // var estacion = "Verano";
-        
+
         // if(estacion == "Invierno") {
         //     console.log("¡Sí! Me encanta el invierno");
         // }
@@ -1371,7 +1371,7 @@
 
         // if(false) {
         //     console.log("La condición es verdadera");
-        // } else { 
+        // } else {
         //     console.log("La condición es falsa");
         // }
 
@@ -1382,7 +1382,7 @@
         // Muestra el mensaje de "else" ya la condición es falsa.
         // if(x < 2) {
         //     console.log("La condición es verdadera");
-        // } else { 
+        // } else {
         //     console.log("La condición es falsa");
         // }
 
@@ -1393,7 +1393,7 @@
         // Muestra el mensaje de "else" ya la condición es falsa.
         // if(estacion == "Verano") {
         //     console.log("Comenzó el verano. Ya podemos ir a la playa.");
-        // } else { 
+        // } else {
         //     console.log("Ya quiero que llegue el verano para poder ir a la playa.");
         // }
 
@@ -1471,15 +1471,15 @@
         representa el número promedio de golpes
         que se espera que haga un golfista para introducir
         la pelota en el hoyo
-        
+
         Hay un nombre diferente dependiento de qué tan
         por encima o por debajo del par estén tus golpes.
-        
+
         Tu función tomará los argumentos par y golpes.
-        
+
         Retorna la cadena correcta según esta tabla que muestra
         los golpes en el orden mayor a menor prioridad.
-        
+
         Golpes              Retornar
         -----------------------------------------
         1                   "Hole-in-one!"
@@ -1555,7 +1555,7 @@
         // var producto = "Hamburguesa"; // Ej 1
         // var producto = "Pizza" // Ej 2
         // var producto = "Helado" // Ej 3
-        
+
         // switch(producto) {
         //     case "Pizza":
         //         console.log("La pizza básica cuesta: $10.55");
@@ -1737,7 +1737,7 @@
         // Conteo de cartas.
 
         /* Descripción:
-        
+
         En el juego de casi Blackjack el jugador puede sacarle
         ventaja a la casa llevando u nregistro del número relativo
         de cartas altas y bajas que qudan en la baraja.
@@ -1794,14 +1794,14 @@
         //             conteo--;
         //             break;
         //     }
-            
+
         //     if(conteo > 0) {
         //         decision = "Apostar";
         //     } else {
         //         decision = "Esperar";
         //     }
 
-        //     return conteo + " " + decision; 
+        //     return conteo + " " + decision;
         // }
 
         // console.log(contarCartas(2));
@@ -1818,7 +1818,7 @@
         //**********************************************************************************************
         //**********************************************************************************************
         // Crear objetos.
-        
+
         // var miPerro = { // Este es un objeto con sus propiedades.
         //     "nombre" : "Gino", // Propiedad ("nombre") : valor ("Gino")
         //     "edad": 5,  // Propiedad (izquierdo) : Valor (derecho)
@@ -1838,11 +1838,11 @@
 
         // var miPerro = {
         // "nombre" : "Gino",
-        // "edad": 5, 
+        // "edad": 5,
         // "peso": 6,
         // "raza": "Beagle"
         // };
-        
+
         // Acceso a la propiedad y su valor.
         // miPerro.nombre; // El punto define qué propiedad del objeto se quiere acceder.
         // console.log(miPerro.nombre); // Arroja el valor de la propiedad de la variable.
@@ -1885,7 +1885,7 @@
 
         // Se crea una variable para seleccionar una propiedad del objeto.
         // var posicion = 2;
-        
+
         // Se pone en el objeto la variable con el valor para acceder a la propiedad de este
         // por medio de notación con corchetes.
         // console.log(resultados[posicion]);
@@ -1988,7 +1988,7 @@
 
         // function buscarElementoQuimico1(simbolo) {
         //     var elementoQuimico = "";
-            
+
         //     switch(simbolo) {
         //         case "Al":
         //         elementoQuimico = "Aluminio";
@@ -2021,7 +2021,7 @@
         //         "B": "Boro",
         //         "Li": "Litio"
         //     };
-            
+
             // Acceder con notación de corchetes con la variable "simbolo".
         //     return simbolosQuimicos[simbolo];
         // }
@@ -2053,7 +2053,7 @@
         // console.log(miCuaderno.hasOwnProperty("origen")) // false
 
 
-        // Ejemplo: 
+        // Ejemplo:
         // function verificarPropiedad(obj, propiedad) {
         //     if(obj.hasOwnProperty(propiedad)) {
         //         return "Propiedad: " + obj[propiedad];
@@ -2108,7 +2108,7 @@
         //         "toppings": [],
         //         "paraLlevar": true
         //     }
-        
+
         // ]
 
         // console.log(ordenesDePizzas[0]); // Primer objeto
@@ -2231,16 +2231,16 @@
         No todos los álbumes tienen la información completa.
         */
 
-        var coleccionDeDiscos = {
-            7853: {
-                tituloDelAlbum: "Bee Gees Greatest",
-                artista: "Bee Gees",
-                canciones: ["Stayin' Alive"]
-            },
-            5439: {
-                tituloDelAlbum: "ABBA Gold"
-            }
-        };
+        // var coleccionDeDiscos = {
+        //     7853: {
+        //         tituloDelAlbum: "Bee Gees Greatest",
+        //         artista: "Bee Gees",
+        //         canciones: ["Stayin' Alive"]
+        //     },
+        //     5439: {
+        //         tituloDelAlbum: "ABBA Gold"
+        //     }
+        // };
 
         /*
         Define una función actualizarDiscosq ue tome los siguientes parámetros:
@@ -2258,8 +2258,8 @@
         - Si "propiedad" es igual a la cadena de caracteres "canciones" pero
         el álbum no tiene una propiedad llamada "canciones", crea un arreglo
         vacio y agrega "valor" a ese arreglo.
-        
-        - Si "valor" no es una cadena vacía y "propiedad" no es igual a 
+
+        - Si "valor" no es una cadena vacía y "propiedad" no es igual a
         "canciones", asigna el valor del parámetro "valor" a la propiedad.
         Si la propiedad no existe, debes crearla y asignar este valor.
         */
@@ -2300,43 +2300,699 @@
         // console.log(coleccionDeDiscos[5439].artista); // Existe la propiedad y su valor.
 
         /*
-        AQUÍ ME QUEDÉ SINO ME APENDEJO 
+        AQUÍ ME QUEDÉ SINO ME APENDEJO
         BUSCANDO EL MINUTO DEL VÍDEO: https://youtu.be/ivdTnPl1ND0?t=21905
         */
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclo "while".
+
+        // var i = 0;
+
+        // while(i <= 15){
+        //     console.log("Hola mundo");
+        //     i++;
+        // }
+
+        // var miArreglo = [];
+        // var i = 0;
+
+        // console.log(miArreglo);
+
+        // while(i <= 10) {
+        //     miArreglo.push(i); // Agrega un valor al arreglo y se incrementa.
+        //     i++;
+        // }
+
+        // console.log(miArreglo);
+
+
+        // Ejemplo:
+
+        // var numeros = [2, 3, 4, 5, 8, 9, 34];
+
+        // while(numeros.length > 4) {
+        //     numeros.pop(); // Elimina los últimos números del arreglo.
+        // }
+
+        // console.log(numeros);
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclo "for".
+
+        // var miArreglo = [];
+
+        // for(var i = 0; i < 10; i += 2) {
+        //     miArreglo.push(i);
+        // }
+
+        // console.log(miArreglo);
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclo "for": números impares.
+
+        // var miArreglo = [];
+
+        // for(var i = 1; i < 50; i += 2) {
+        //     miArreglo.push(i);
+        // }
+
+        // console.log(miArreglo);
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclo "for": contar hacia atrás.
+
+        // var miArreglo = [];
+
+        // for(i = 15; i >= 10; i -= 2){
+        //     console.log(i);
+        // }
+
+        // for(var i = 10; i > 0; i -= 2) {
+        //     miArreglo.push(i);
+        // }
+
+        // console.log(miArreglo);
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Iterar sobre un arreglo con un ciclo "for".
+
+        // var miArreglo = [4, 6, 8, 2];
+        // var total = 0;
+
+        // for(var i = 0; i < miArreglo.length; i++) {
+        //     console.log("Iteración " + i);
+        //     console.log(miArreglo[i]);
+        //     total += miArreglo[i];
+        // }
+
+        // console.log(total);
+
+
+        // Ejemplo:
+        // var lenguajes = ["JavaScript", "Python", "Java", "C++"];
+
+        // for(var i = 0; i < lenguajes.length; i++){
+        //     console.log(lenguajes[i].toUpperCase());
+        // }
+
+
+        // Ejemplo 2:
+
+        // function contarNumerosPares(arreglo) {
+        //     var total = 0;
+
+        //     for(var i = 0; i <= arreglo.length; i++) {
+        //         if(arreglo[i] % 2 == 0) {
+        //             total++;
+        //         }
+        //     }
+        //     return total;
+        // }
+
+        // console.log(contarNumerosPares([5, 8, 1, 2, 4, 6, 3]));
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclo "for" anidados.
+
+        // var miArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+        // for(var i = 0; i < miArreglo.length; i++) {
+        //     console.log("Nueva iteracion:");
+        //     var arregloAninado = miArreglo[i]; // Arreglo
+        //     console.log("Arreglo: " + arregloAninado)
+
+        //     for(var j = 0; j < arregloAninado.length; j++) {
+        //         console.log(">>> Ciclo anidado");
+        //         console.log("Elemento:")
+        //         console.log(arregloAninado[j]); // Elemento
+        //     }
+        // }
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Ciclos "do...while".
+
+        // var x = 16;
+
+        // do { // Se ejecuta al menos una vez ya que ejecuta el contenido y luego lo condiciona.
+        //     console.log(x);
+        //     x++; // 17
+        // } while(x < 10);
+
+        // var x = 16;
+
+        // while(x < 10) {
+        //     console.log(x);
+        //     x++;
+        // }
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Búsqueda de perfil.
+
+        // var contactos = [
+        //     {
+        //         "nombre": "Nora",
+        //         "apellido": "Nav",
+        //         "numero": "0543236543",
+        //         "gustos": ["Pizza", "Programación"]
+        //     },
+        //     {
+        //         "nombre": "Harry",
+        //         "apellido": "Potter",
+        //         "numero": "0994372684",
+        //         "gustos": ["Hogwarts", "Magia"]
+        //     },
+        //     {
+        //         "nombre": "Sherlock",
+        //         "apellido": "Holmes",
+        //         "numero": "0487345643",
+        //         "gustos": ["Casos interesantes", "Violín"]
+        //     }
+        // ];
+
+        // function buscarPerfil(nombre, propiedad) { 
+        //     for(var i = 0; i < contactos.length; i++) {
+        //         if(contactos[i].nombre === nombre) {
+        //             return contactos[i][propiedad] || "La propiedad no existe."; // operador OR por si existe o no.
+        //         }
+        //     }
+        //     return "El contacto no está en la lista.";
+        // }
+
+        // console.log(buscarPerfil("Nora", "gustos"));
+        // console.log(buscarPerfil("Harry", "numero"));
+        // console.log(buscarPerfil("Harry", "dirección"));
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Números aleatorios.
+
+        // function generarFraccionAleatoria() {
+        //     return Math.random(); // Retorna un valor aleatorio entre 0 y 1, aunque 1 no está incluido.
+        // }
+        // console.log(generarFraccionAleatoria());
+        // console.log(generarFraccionAleatoria());
+
+
+        // También se puede llamar directamente.
+        // console.log(Math.random());
+
+        // Asignar a una variable el método aleatorio.
+        // var numeroAleatorio = Math.random();
+        // console.log(numeroAleatorio);
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Números enteros aleatorios.
+
+        // Math.floor() = Trunca los decimales para llegar a un entero.
+        // var numeroAleatorioEntre0y19 = Math.floor(Math.random() * 20); // Trunca la parte decimal, toma la parte entera nada más.
+        // console.log(numeroAleatorioEntre0y19);
+
+        // function generarEnteroAleatorio(limiteSuperior) {
+            // Generar un entero aleatorio entre 0 y el límite
+            // superior (sin incluirlo);
+        //     return Math.floor(Math.random() * limiteSuperior);
+        // }
+        
+        // for(var i = 0; i < 15; i++) {
+        //     console.log(generarEnteroAleatorio(5));
+        // }
 
 
 
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Números enteros aleatorios en un rango.
 
+        // function rangoAleatorio(limiteInferior, limiteSuperior) {
+        //     return Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1)); 
+        // }
+
+        // for(var i = 0; i < 15; i++) {
+        //     console.log(rangoAleatorio(3, 8));
+        // }
+
+
+
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Función parseInt().
+
+        // console.log(parseInt("5")); // Convierte cadena de (String) a Int (número, sea positivo o negativo);
+        // console.log(parseInt("6.2")); // Trunca el número.
+        // console.log(parseInt("abc")); // NaN, no representa un número.
+
+
+        // Ejemplo:
+        // var a = parseInt("5");
+        // var b = parseInt("7");
+
+        // console.log(a + b);
+
+
+
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Función parseInt() con una base.
+
+        // console.log(parseInt("110111", 2)); // Para especificar que es un valor binario
+                                            // se pone un "2" para especificar la base de este.
+
+        // Sistema hexadecimal.
+        // console.log(parseInt("3E0A", 16)); // Para especificar que es un valor hexadecimal
+                                            // se pone un "16" para especificar la base de este.
+
+
+
+        //**********************************************
+        //**********************************************
+        //**********************************************
+        // Operador condicional (ternario).
+
+        // function retornarMinimo1(x, y) {
+        //     if(x < y) {
+        //         return x;
+        //     } else {
+        //         return y;
+        //     }
+        // }
+
+        // Función compactada del anterior ejemplo.
+        // function retornarMinimo2(x, y) { // Solamente se puede utilizar cuando hay un "return".s
+        //     return x < y ? x : y; // Sí (x < y) es verdadero, devuelve: x : sino retona y;
+        // }   // ? retorna opción 1
+            // : sino retorna opción 2
+            // Hace prácticamente lo mismo que el ejemplo anterior.
+
+            // Ejemplo:
+            // function retornarMinimo3(x, y) {
+            //     return x < y ? x : y;
+            // }
+
+            // Primer manera:
+            // console.log(retornarMinimo3(4, 7));
+            // console.log(retornarMinimo3(8, 2));
+            // console.log(retornarMinimo3(5, 5));
+
+            
+            // Ejemplo 2:
+            // function retornarMinimo4(x, y) {
+            //     console.log(x < y ? x : y);
+            // }
+
+            // Segunda manera:
+            // retornarMinimo4(4, 7);
+            // retornarMinimo4(8, 2);
+            // retornarMinimo4(5, 5);
+
+
+            // Ejemplo 3:
+            // var a = 5;
+            // var b = 9;
+
+            //          5 > 9 retorna 5+2 sino 9*3.
+            // console.log(a > b ? a + 2 : b * 3);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Múltiples operadores condicionales.
+
+            // function compararNumeros(a, b) {
+            //     if(a === b) {
+            //         return "a y b son iguales";
+            //     } else if(a > b) {
+            //         return "a es mayor que b";
+            //     } else {
+            //         return "b es mayo que a";
+            //     }
+            // }
+
+            // Función más compacta.
+            // function compararNumeros(a, b) { 
+            //     return a == b ? "a y b son iguales" 
+            //         : a > b ? "a es mayor que b"
+            //             : "b es mayor que a"; 
+            // }
+
+            // console.log(compararNumeros(11, 27));
+            // console.log(compararNumeros(27, 11));
+            // console.log(compararNumeros(15, 15));
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // var vs let.
+
+            // Con "var" podemos volver a declarar el valor y variable incontables veces.
+            // var campista = "James";
+            // var campista = "David";
+            // console.log(campista)
+
+            // Con "let" no se puede declarar el valor y variable más de una vez
+            // Se puede reasignar el valor, más no volver a declarar la variable.
+            // let campista = "James"; // Error
+            // let campista = "David"; // Error
+            // campista = "David"; // Bien, sin volver a declarar pero reasignando valor.
+            // console.log(campista);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Ámbito de var vs let.
+
+            // var miVariableGlobal = 4;
+            // console.log(miVariableGlobal);
+
+            // function miFuncion() { 
+            //     var miVariableLocal = 8;
+            //     console.log(miVariableGlobal);
+            // }
+
+            // miFuncion();
+
+            // console.log(miVariableGlobal);
+            // console.log(miVariableLocal); // Error
+
+
+            // Ejemplo con var:
+            // for(var i = 0; i < 3; i++) {
+            //     console.log(i); 
+            // }
+
+            // console.log("Variable: " + i);
+
+
+            // Ejemplo con let:
+            // for(let i = 0; i < 3; i++) { // "i" solo existe en este bloque de código.
+            //     console.log(i); 
+            // }
+
+            // console.log("Variable: " + i);
+
+
+            // Tercer ejemplo:
+            // var mostrarColor = true;
+
+            // if(mostrarColor) {
+            //     let color = "verde" // Solamente la variable "color" se puede utilizar en este bloque de código;
+            //     console.log("Mi color favorito es: " + color);
+            // }
+
+            // console.log(color); // Error, "color" no está definida fuera del bloque "if";
+
+            // AHORA CON VAR.
+            // if(mostrarColor) {
+            //     var color = "verde" // Solamente la variable "color" se puede utilizar en este bloque de código;
+            //     console.log("Mi color favorito es: " + color);
+            // }
+
+            // console.log(color); // Bien, "color" se puede utilizar globalmente por el "var";
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // const.
+
+            /*const = constante, variables que solamente pueden ser usadas para acceder
+            a ese valor, no podemos modificar el valor el valor una vez que haya sido
+            asignado más de una vez.*/
+
+            // const miConstante = 35;
+
+            // console.log(miConstante);
+
+            // miConstante = 15;   // Error, es solo de lectura, no se puede reasignar su valor o modificar su valor
+                                    // una vez declarado el valor.
+            
+
+            // Ejemplo diferente:
+            // const miConstante; // Error, no se puede declarar si no se inicializa.
+            
+            // miConstante = 15;
+
+            // console.log(miConstante);
+
+
+            // Ejemplo 2:
+            // function calcularAreaCirculo1(radio) {
+            //     const PI = 3.14;
+
+            //     if(radio < 0) {
+            //         return undefined;
+            //     }
+
+            //     return PI * (radio ** 2); // ** eleva al cuadrado un número.
+            // }
+
+            // console.log(calcularAreaCirculo1(5)); // Bien, valor exacto.
+
+
+            /////////////////////////
+            // Algo que puede pasar:
+            // function calcularAreaCirculo2(radio) {
+            //     var pi = 3.14; // Que aquí sea una variable con "var" y este correcta.
+
+            //     if(radio < 0) {
+            //         return undefined;
+            //     }
+
+            //     pi = -45.2; // y que aquí se vuelva a reasignar o modificar el valor, tremendo error.
+
+            //     return pi * (radio ** 2); // ** eleva al cuadrado un número.
+            // }
+            // console.log(calcularAreaCirculo2(5)); // Mal, valor todo torombolo.
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Mutar arreglo declarado con const.
+
+            // const MI_ARREGLO = [1, 2, 3, 4];
+
+            // MI_ARREGLO = [5, 6, 7, 8]; // Error, por definir el arreglo con "const" - read Only.
+
+
+            // Mutación: cambiar los elementos del arreglo.
+            // const MI_ARREGLO = [1, 2, 3, 4];
+
+            // MI_ARREGLO [0] = 5;
+            // MI_ARREGLO [1] = 6;
+            // MI_ARREGLO [2] = 7;
+            // MI_ARREGLO [3] = 8;
+
+            // console.log(MI_ARREGLO); // El arreglo fue mutado.
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Crear un objeto inmutable.
+
+            // let colores = {
+            //     "verde": "#10e04b",
+            //     "azul": "#1b50e0",
+            //     "negro": "#00000",
+            //     "blanco": "#ffffff"
+            // };
+
+            // Object.freeze(colores);  // Método que previene la modificación de atributos 
+                                        // de propiedades existentes y sus valores, y previene 
+                                        // la adición de nuevas propiedades, lo congela en ese 
+                                        // estado cuando se ejecuta la línea.
+
+            // colores.amarillo = "#fff200";
+            // console.log(colores);   // Error, ya que no se puede agregar la propiedad "amarillo"
+                                    // ya que el objeto no es extensible / que permita ingresar más datos.
+
+            // Ahora se intena cambiar el valor de una propiedad existente:
+            // colores.verde = "#345sg5";
+
+            // console.log(colores); // No se puede cambiar el valor de la propiedad - read only.
+
+
+            // Ahora se quiere borrar la propiedad de ese objeto con un "delete".
+            // delete colores.verde; // No lo elimina, ya que está protegido por el "freeze".
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Funciones flecha.
+
+            // const fecha = function() { // Definiendo una función anónima.
+            //     return new Date(); // Retorna la fecha actual de la pc.
+            // };
+
+
+            // Convirtiendo una función a una función flecha.
+                // El símbolo "=>" está creando una función flecha.
+                // El cual toma los parámetros dentro de los paréntesis "()".
+                    // Y retorna el objeto "new Date()".
+
+            // const fecha = () => new Date(); // Retorna la fecha actual de la pc.
+            // Pasa una función como argumento a otra función, solamente hay que escribirla
+            // directamente como el argumento.
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Funciones flecha con parámetros.
+
+            // const sumarTres = function(x) {
+            //     return x + 3;
+            // }
+
+            // Utilizando funciones flecha (hace lo mismo que lo anterior).
+            // const sumarTres = (x) => x + 3;
+            // console.log(sumarTres(10)); // Funciona correctamente.
+
+
+            // Ejemplo con una función anónima.
+            // const concatenarArreglos = function(arr1, arr2) {
+            //     return arr1.concat(arr2); // Concatena un arreglo con otro.
+            // }
+
+            // console.log(concatenarArreglos([1, 2], [ 3, 4, 5]));
+
+            // Convertir utilizando funciones flecha.
+            // const concatenarArreglos = (arr1, arr2) => arr1.concat(arr2); 
+            // console.log(concatenarArreglos([1, 2], [ 3, 4, 5]));
+
+
+            // Ejemplo 2:
+            // const sumar1 = function(a, b) {
+            //     let num = 6;
+            //     return a + b + num;
+            // }
+
+            // Se convierte a función flecha.
+            // const sumar = (a, b) => {
+            //     let num = 6;
+            //     return a + b + num;
+            // }
+
+            // console.log(sumar(1, 1));
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Valores por defecto para parámetros.
+
+            // Dentro de los parámetros, se le agrega un "=" para asignar un valor por defecto.
+            // Así si se omite el parámetro, se le asigna ese valor por defecto.
+            // const incrementar = (num, valor = 1) => num + valor;
+
+            // console.log(incrementar(5)); // Da 6, el 5 se incrementó en 1 por el valor por defecto.
+            
+            // console.log(incrementar(5, 3)) // Da 8, el 5 se incrementó en 3 por el parámetro ingresado.
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Operador rest (...args).
+
+            // function miFuncion(...args) {   // args = Argumentos, también puede ser cualquier nombre.
+            //     console.log(args);          // Lo importante son los 3 puntos.
+            // }                               // (...args) convierte todos los argumentos en elementos de un solo arreglo.
+                                            // podría decirse que es un arreglo.
+
+            // miFuncion(1, 2, 3, 4); // Arroja un arreglo con los elementos ingresados.
+
+            // miFuncion([1, 2, 3], [ 4, 5, 6]);   // Aunque sean otro tipo de datos, se agregan en un arreglo.
+                                                // Arroja arreglos
+
+            // Ejemplo con length.
+            // function miFuncion(...args) {   
+            //     console.log(args.length);   // También se puede utilizar la propiedad "length".
+            // }       
+            // miFuncion([1, 2, 3], [ 4, 5, 6]); // Arroja 2, porque hay dos argumentos en el arreglo.
+
+            // miFuncion(1, 2, 3, 4, 5, 6); // Arroja 6, ya que hay 6 elementos en arreglo.
+
+
+            // Ejemplo 3:
+            // "reduce" es un método que se puede llamar con un arreglo.
+            const sumar1 = (x, y, z) => {
+                const args = [x, y, z];
+                return args.reduce((a, b) => a + b, 0); // con "reduce" con estos argumentos
+            }                                           // suma los elementos del arreglo y retorna el resultado.
+                                                        // Se pasa una función flecha como argumento.
+
+
+            const sumar = (...args) => { // args es un arreglo, se puede eliminar el arreglo de abajo.
+                // -- Eliminado: const args = [x, y, z];
+                return args.reduce((a, b) => a + b, 0); 
+            }   
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Operador spread.
+
+            // Aquí me quede ALV, ya quiero acabar esta mamada: https://youtu.be/ivdTnPl1ND0?t=29551
 
 
 
