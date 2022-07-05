@@ -2973,17 +2973,17 @@
 
             // Ejemplo 3:
             // "reduce" es un método que se puede llamar con un arreglo.
-            const sumar1 = (x, y, z) => {
-                const args = [x, y, z];
-                return args.reduce((a, b) => a + b, 0); // con "reduce" con estos argumentos
-            }                                           // suma los elementos del arreglo y retorna el resultado.
+            // const sumar1 = (x, y, z) => {
+            //     const args = [x, y, z];
+            //     return args.reduce((a, b) => a + b, 0); // con "reduce" con estos argumentos
+            // }                                           // suma los elementos del arreglo y retorna el resultado.
                                                         // Se pasa una función flecha como argumento.
 
 
-            const sumar = (...args) => { // args es un arreglo, se puede eliminar el arreglo de abajo.
+            // const sumar = (...args) => { // args es un arreglo, se puede eliminar el arreglo de abajo.
                 // -- Eliminado: const args = [x, y, z];
-                return args.reduce((a, b) => a + b, 0); 
-            }   
+            //     return args.reduce((a, b) => a + b, 0); 
+            // }   
 
 
 
@@ -2994,21 +2994,395 @@
 
             // Aquí me quede ALV, ya quiero acabar esta mamada: https://youtu.be/ivdTnPl1ND0?t=29551
 
+            // const numeros = [1, 2, 3];
+
+            // function sumar(x, y, z) {
+            //     console.log(x); // Ya una vez descompuesto el arreglo, se pasa el valor individualmente.
+            //     console.log(y);
+            //     console.log(z);
+            //     return x + y + z;
+            // }
+
+            // Pasamos una serie de argumentos en una función que se debe de poner 3 parámetros
+            // El "...Vaiable" descompone un arreglo en sus elementos individuales y asignarlos en su orden a los parámetros.
+            // console.log(sumar(...numeros));
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Sintaxis de desestructuración.
+
+            // Asigna las propiedades de un objeto a variables.
+            // const usuario = {
+            //     nombre: "Gino Smith",
+            //     edad: 34
+            // };
+
+            // Como se hacia con anterioridad.
+            // const nombre = usuario.nombre;
+            // const edad = usuario.edad;
+
+            // Como se hace ahora.
+            // Se pasan las propiedades en paréntesis y luego se escribe 
+            // el nombre del objeto para buscar sus valores de us propiedades.
+            // const {nombre, edad} = usuario;
+
+
+            // Ejemplo:
+            // var coordenadas = {
+            //     x: 4,
+            //     y: 6,
+            //     z: 12
+            // };
+
+            // const x = coordenadas.x;
+            // const y = coordenadas.y;
+            // const z = coordenadas.z;
+
+            // Simplificación con destructuración.
+            // const {x, y, z} = coordenadas;
+
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Sintaxis de desestructuración: objetos anidados.
+
+            // const usuario = {
+            //     johnDoe: {
+            //         edad: 27,
+            //         correo: "johnDoe@freecodecamp.com"
+            //     }
+            // };
+
+            // Acceder a las propiedades de un objeto anidado.
+            // const (Objeto: {propiedad1, propiedad2})
+            // const {johnDoe: {edad, correo}} = usuario;
+
+            // console.log(edad);
+            // console.log(correo);
+
+            // El nombre de las propiedades con la sintaxis de desestructuración.
+            // const {johnDoe: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
+
+            // console.log(edad); // Error, ya no se llama así la propiedad.
+
+            // console.log(edadDelUsuario); // Correcto, ya aparecen los valores con ese nombre.
+            // console.log(correoDelUsuario); // Correcto, ya aparecen los valores con ese nombre.
+
+
+            // Ejemplo 2:
+
+            // const PRONOSTICO_LOCAL = {
+            //     "ayer": {
+            //         minima: 61,
+            //         maxima: 76
+            //     },
+            //     "hoy": {
+            //         minima: 64,
+            //         maxima: 77
+            //     },
+            //     "mañana": {
+            //         minima: 64,
+            //         maxima: 80
+            //     }
+            // };
+
+            // const minimaHoy = PRONOSTICO_LOCAL.hoy.minima;
+            // const maximoHoy = PRONOSTICO_LOCAL.hoy.maxima;
+            // console.log(minimaHoy, maximoHoy);
+
+            // Ahora con sintaxis de desestructuración.
+            // const {hoy: {minima: minimaHoy}} = PRONOSTICO_LOCAL;
+            // console.log(minimaHoy);
+
+            // Llamar dos vaiables para ejecutar ambas propiedades en la misma línea.
+            // const {hoy: {minima: minimaHoy, maxima: maximaHoy}} = PRONOSTICO_LOCAL;
+            // console.log(minimaHoy, maximaHoy);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Sintaxis de desestructuración: arreglos.
+
+            // var a;
+            // var b;
+
+            // Asignando el valor a cada una de las variables.
+            // [a, b, c] = [1, 2, 3];
+            // console.log(a);
+            // console.log(b);
+            // console.log(c);
+
+
+            // CASO ESPECÍFICO:
+            // Tomar solamente los dos primeros valores para cada variable:
+            // Para que C sea 5, se utilizan las comas para saltar entre los elementos del arreglo a la posición del valor.
+            // [a, b, , , c] = [1, 2, 3, 4, 5, 6]; 
+            // console.log(a);
+            // console.log(b);
+            // console.log(c);
+
+            //  Se puede cambiar o intercambiar los valores de dos variables.
+            // var a = 8;
+            // var b = 6;
+
+            // "b" se le asigna el valor de "a".
+            // "a" se le asigna el valor de "b".
+            // [b, a] = [a, b];
+            // console.log("a: " + a);
+            // console.log("b: " + b);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Sintaxis de desestructuración: con el operador rest.
+
+            // var a;
+            // var b;
+            
+            // [a, b, ...arr] = [1, 2, 3, 4, 5, 6, 7]; // Se asignan el restante de los números al arreglo creado con el operador "rest".
+            // console.log("a: " + a);
+            // console.log("b: " + b);
+            // console.log("c: " + arr);
+
+
+            // Ejemplo 2:
+
+            // const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8];
+
+            // function removerTresPrimerosElementos(arreglo) {
+                
+            //     const [ , , , ...nuevoArrelglo] = arreglo;
+            //     return nuevoArrelglo;
+            // }
+
+            // const arregloFinal = removerTresPrimerosElementos(arregloInicial);
+            // console.log(arregloFinal);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Sintaxis de desestructuración: pasar objeto como argumento.
+
+            // var nuevoPerfilCliente = {
+            //     nombre: "Jane Doe",
+            //     edad: 24,
+            //     nacionalidad: "Española",
+            //     ubicacion: "España"
+            // };
+
+            // const actualizarPerfil = (informacionDePerfil) => {
+            //     const {nombre, edad, nacionalidad, ubicacion} = informacionDePerfil;
+            //     console.log(nombre);
+            //     console.log(edad);
+            //     console.log(nacionalidad);
+            //     console.log(ubicacion);
+            // };
+
+            // actualizarPerfil(nuevoPerfilCliente);
+
+
+            // Ejemplo 2:
+            // var nuevoPerfilCliente = {
+            //     nombre: "Jane Doe",
+            //     edad: 24,
+            //     nacionalidad: "Española",
+            //     ubicacion: "España"
+            // };
+
+            // const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
+            //     console.log(nombre);
+            //     console.log(edad);
+            //     console.log(nacionalidad);
+            //     console.log(ubicacion);
+            // };
+
+            // actualizarPerfil(nuevoPerfilCliente);
+
+
+            // Ejemplo 3
+            // const estadisticas = {
+            //     max: 56.78,
+            //     desviacionEstandar: 4.34,
+            //     mediana: 34.54,
+            //     moda: 23.87,
+            //     min: -0.75,
+            //     promedio: 35.85
+            // };
+
+            // const mitad1 = (estadisti) => (estadisti.max + estadisti.min) / 2.0;
+
+            // De la mejor manera:
+            // const mitad = ({max, min}) => (max + min) / 2.0;
+            // console.log(mitad(estadisticas));
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Plantillas literales.
+
+            /* Plantillas literales o plantillas de cadenas.
+            
+            Caracteríßticas:
+            - Se usa el acento invertido (backtick) ´ en lugar de comillas,
+            - Pueden contener comillas simples y dobles.
+            - Las líneas se preservan como se escriben en el código.
+            - Para reemplazar una variable se escribe ${variable}.
+            - Dentro de ${} tambien puedes escribir expresiones.
+            */
+
+            // var a = 6;
+            // console.log(`El valor de a es ${a}`);
+
+            // Ejemplo 2:
+            // var nombre = "Jair";
+            // var edad = 6;
+
+            // console.log(`Mi nombre es ${nombre} y tengo ${edad} años.`);
+
+            // Ejemplo 3:
+            // var miArreglo = [1, 2, 3, 4];
+
+            // console.log(`El arreglo es ${JSON.stringify(miArreglo)}`); // Formato que permite presentar objetos mucho más fácil de entender.
+
+
+            // Ejemplo 4: propiedades de un objeto
+            // var persona = {
+            //     nombre: "Gino Cass",
+            //     edad: 10
+            // };
+
+            // Con notación de puntos.
+            // const SALUDO = `¡Hola! Mi nombre es ${persona.nombre} y tengo ${persona.edad} años`;
+            // console.log(SALUDO);
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Crear objetos de forma concisa.
+
+            // const crearPersona = (nombre, edad, idioma) => {
+            //     return {
+            //         nombre: nombre,
+            //         edad: edad,
+            //         idioma: idioma
+            //     }
+            // }
+
+            // console.log(crearPersona("Gino Smith", 28, "Español"));
+
+            // Forma concisa.
+
+            // const crearPersona2 = (nombre, edad, idioma) => ({nombre, edad, idioma});
+
+            // console.log(crearPersona2("Gino Smith", 28, "Español"));
+
+
+
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Métodos.
+
+            // Propiedades que sean funciones.
+            // "this" se refiere al objeto en el que estamos trabajando.
+            // const persona = {
+            //     nombre: "Isabel",
+                //  presentarse: function() Manera 1
+            //     presentarse() { // Manera 2
+            //         return `¡Hola! Mi nombre es ${this.nombre}`; // this se refiere algo en el objeto.
+            //     }
+            // };
+
+            // Si el valor de una propiedad es una función, se denomina "método";
+            // console.log(persona.presentarse());
 
 
 
 
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Definir una clase.
+
+            // UpperCamelCase 
+            // class TransbordadorEspecial {
+            //     constructor(planeta) { // Estado inicial inicializado.
+            //         this.planeta = planeta; // Va a tener una propiedad llamada "planeta"
+            //     }
+            // }
+
+            // var zeus = new TransbordadorEspecial("Júpiter");  // Nuevo objeto con "new"
+            // console.log(zeus.planeta);
+
+            // var apolo = new TransbordadorEspecial("Marte");  // Nuevo objeto con "new"
+            // console.log(apolo.planeta);
+
+            // Ejemplo 2:
+
+            // class Mascota {
+            //     constructor(nombre, edad) {
+            //         this.nombre = nombre;
+            //         this.edad = edad;
+            //     }
+            // }
+
+            // var miMascota = new Mascota("Nora", 5);
+            // console.log(miMascota.nombre);
+            // console.log(miMascota.edad);
+
+            // var tuMascota = new Mascota("Gino", 2);
+            // console.log(tuMascota.nombre);
+            // console.log(tuMascota.edad);
 
 
 
+            //**********************************************
+            //**********************************************
+            //**********************************************
+            // Getters and Setters.
 
+            // Proteger los datos privándolos con "_";
+            // class Libro {
+            //     constructor(autor) {
+            //         this._autor = autor;
+            //     }
 
+            //     get autor() {
+            //         console.log("Getter");
+            //         return this._autor;
+            //     }
 
+            //     set autor(nuevoAutor) {
+            //         console.log("Setter");
+            //         this._autor = nuevoAutor;
+            //     }
+            // }
 
+            // const libro = new Libro("anónimo"); // Así funciona el getter.
+            // console.log(libro.autor);
 
-
-
-
+            //Ahora con Setter
+            // libro.autor = "Gino Smith"; // Así funciona el setter.
+            // console.log(libro.autor);
     </script>
 </body>
 </html>
